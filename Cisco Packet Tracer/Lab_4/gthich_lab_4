@@ -1,0 +1,115 @@
+==================================================Đề bài lab 4==============================================================
+
+File `.pkt` là **file định dạng nhị phân (binary)** riêng biệt của phần mềm Cisco Packet Tracer. Trên GitHub, nó không hỗ trợ hiển thị giao diện đồ họa hay mã nguồn xem trực tiếp như file code `.py`, `.cpp` hay `.md` đâu. Khi click vào file `.pkt` trên web GitHub, bạn chỉ thấy màn hình báo *Cannot display binary file* hoặc một đống ký tự ngoằn ngoèo mã hóa thôi!
+
+**Cách xem và dùng file `.pkt` từ GitHub:**
+
+* **Muốn mở lại làm tiếp:** Bạn phải clone/ tải (Download) file `.pkt` đó về máy tính, rồi dùng phần mềm Cisco Packet Tracer mở lên như bình thường.
+* **Muốn khoe repo đẹp mắt cho người khác xem trực tiếp trên GitHub:** Bạn chụp ảnh sơ đồ bài lab + viết mô tả rồi dán vào file `README.md`. Mọi người nhìn file Readme là thấy ngay sơ đồ, còn file `.pkt` đóng vai trò là "mã nguồn" để ai thích thì tải về chạy thử.
+
+Cơm nước no nê, máy tính sẵn sàng rồi thì ta vào **Lab 4: Cấu hình DHCP (Tự động cấp IP)** luôn nhé!
+
+---
+
+**Mục tiêu Lab 4:**
+Bình thường bạn phải vào từng PC để gán IP thủ công (Static IP). Hôm nay ta sẽ biến **Router** thành một **DHCP Server**, khi cắm bất kỳ máy tính mới nào vào mạng, nó chỉ cần chọn chế độ `DHCP` là Router sẽ tự động "phát" địa chỉ IP, Subnet Mask và Default Gateway cho máy đó!
+
+**Sơ đồ chuẩn bị:**
+
+* **1 Router 2911**
+* **1 Switch 2960**
+* **3 PC** (PC0, PC1, PC2) cắm chung vào Switch bằng cáp thẳng.
+
+**Các bước thực hiện:**
+
+1. **1. Dựng sơ đồ & Cắm dây:** 1 Router, 1 Switch, 3 PC.
+* Nối 3 PC vào Switch 2960.
+* Nối Switch 2960 vào cổng `GigabitEthernet0/0/0` của Router 2911.
+
+
+2. **2. Cấu hình IP cho Router:** Gán IP cổng g0/0/0.
+Vào CLI của Router, đặt IP cho cổng nối xuống Switch làm Cửa khẩu (Default Gateway):
+
+```text
+enable
+configure terminal
+interface GigabitEthernet0/0/0
+ip address 192.168.1.1 255.255.255.0
+no shutdown
+exit
+
+```
+
+
+3. **3. Cấu hình dịch vụ DHCP:** Tạo DHCP Pool trên Router.
+Vẫn ở chế độ `Router(config)#`, gõ 3 dòng thần thánh sau:
+
+```text
+ip dhcp pool MANG_LAN1
+network 192.168.1.0 255.255.255.0
+default-router 192.168.1.1
+exit
+
+```
+
+
+4. **4. Kiểm tra trên các PC:** Chuyển từ Static sang DHCP.
+* Mở từng PC $\rightarrow$ **Desktop** $\rightarrow$ **IP Configuration**.
+* Tích chọn từ **Static** sang **DHCP**.
+* Chờ 2 giây thấy dòng *DHCP request successful* và PC tự nhận IP (dạng `192.168.1.2`, `192.168.1.3`...) là thành công!
+
+
+Bạn dựng sơ đồ và gõ thử xem Router phát IP ngon lành chưa nhé!
+
+=============================================================Lý thuyết================================================================
+
+Dù chữ hơi mờ một tẹo do giao diện xám nhưng dòng chữ **`DHCP request successful.`** sáng trưng kia là đủ để xác nhận bạn đã làm thành công 100% rồi!
+
+Nó tự điền luôn địa chỉ IP `192.168.1.2`, Subnet Mask `255.255.255.0` và Default Gateway `192.168.1.1` vào PC0 mà bạn không cần phải gõ tay một số nào. Các PC còn lại (PC1, PC2) chắc chắn cũng tự nhảy lên `1.3`, `1.4` ngon lành.
+
+**Giải thích bản chất 3 dòng lệnh DHCP Pool bạn vừa gõ:**
+
+* `ip dhcp pool MANG_LAN1`: Tạo ra một "kho" chứa IP tên là `MANG_LAN1`.
+* `network 192.168.1.0 255.255.255.0`: Khai báo cho Router biết: *"Hãy lấy các IP thuộc dải `192.168.1.x` này để phát cho các máy tính."*
+* `default-router 192.168.1.1`: Dặn Router luôn gửi kèm địa chỉ Cửa khẩu `192.168.1.1` cho các máy tính để tụi nó biết đường ra ngoài mạng khác.
+
+---
+
+**Nâng cao 1 tẹo (Mẹo thực tế):**
+Bởi vì Router tự phát từ `192.168.1.2` trở đi, nhưng nếu trong mạng có các thiết bị cần **IP cố định** (như Máy in, Server, Camera), Router phát trúng địa chỉ đó thì sẽ bị trùng IP (Conflict).
+
+Muốn dặn Router **"chừa"** một vài IP ra không phát (ví dụ từ `192.168.1.1` đến `192.168.1.10`), bạn gõ lệnh này ở ngoài `Router(config)#`:
+
+```text
+ip dhcp excluded-address 192.168.1.1 192.168.1.10
+
+```
+
+Lúc này PC cắm vào sẽ nhận IP bắt đầu từ `192.168.1.11` trở đi!
+
+Chúc mừng bạn đã chinh phục xong **Lab 4: DHCP Server** cực nhanh gọn! Giờ đẩy file `.pkt` lên GitHub kèm file `README.md` xinh xắn rồi đi ngủ được rồi đấy!
+
+
+
+Lệnh **`ip dhcp excluded-address`** được đặt ở ngay chế độ **Cấu hình toàn cục (Global Configuration mode)** — tức là ở cấp `Router(config)#`, **TRƯỚC** hoặc **NGOÀI** cái pool DHCP.
+
+Router cần biết những IP nào bị "cấm chỉ định" trước khi nó bắt đầu phân phát IP cho các máy tính.
+
+Thứ tự chuẩn chỉnh khi cấu hình CLI sẽ như thế này:
+
+```text
+Router> enable
+Router# configure terminal
+
+! 1. Khai báo các IP CẤM phát (ví dụ chừa từ .1 đến .10 cho Router, Server, Printer)
+Router(config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10
+
+! 2. Bây giờ mới tạo Pool DHCP
+Router(config)# ip dhcp pool MANG_LAN1
+Router(config-dhcp)# network 192.168.1.0 255.255.255.0
+Router(config-dhcp)# default-router 192.168.1.1
+Router(config-dhcp)# exit
+
+```
+
+**Một lưu ý nhỏ:** Nếu bạn lỡ tạo Pool DHCP trước rồi mới gõ `ip dhcp excluded-address` sau thì Router vẫn hiểu, nhưng cách viết chuẩn và chuyên nghiệp nhất trong thực tế luôn là đặt lệnh "loại trừ IP" lên đầu tiên!
