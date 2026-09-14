@@ -139,7 +139,7 @@ Khi làm Lab không nối Internet, bạn có thể tự do sáng tạo chọn c
 
 
 
-lỡ mình ghi 1 số nào quá 255 hay nhỏ hơn 0 là ko đc nhỉ? =))
+**lỡ mình ghi 1 số nào quá 255 hay nhỏ hơn 0 là ko đc nhỉ?**
 
 
 
