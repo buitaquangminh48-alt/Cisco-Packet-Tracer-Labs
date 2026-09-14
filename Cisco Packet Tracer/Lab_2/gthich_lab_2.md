@@ -82,7 +82,7 @@ Giải thích tường tận từng thắc mắc của bạn đây!
 
 # Lỗi physical
 
-Lý do cực kỳ đơn giản: Bạn đang bị dính ở chế độ **Simulation (Mô phỏng)** đấy =))
+Lý do cực kỳ đơn giản: Bạn đang bị dính ở chế độ **Simulation (Mô phỏng)** đấy!
 
 Bạn nhìn xuống góc dưới bên phải màn hình (chỗ thanh công cụ màu xanh lá/màu xanh dương):
 
