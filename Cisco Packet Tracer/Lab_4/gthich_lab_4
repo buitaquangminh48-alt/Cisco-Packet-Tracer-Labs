@@ -1,4 +1,4 @@
-==================================================Đề bài lab 4==============================================================
+# Đề bài lab 4
 
 File `.pkt` là **file định dạng nhị phân (binary)** riêng biệt của phần mềm Cisco Packet Tracer. Trên GitHub, nó không hỗ trợ hiển thị giao diện đồ họa hay mã nguồn xem trực tiếp như file code `.py`, `.cpp` hay `.md` đâu. Khi click vào file `.pkt` trên web GitHub, bạn chỉ thấy màn hình báo *Cannot display binary file* hoặc một đống ký tự ngoằn ngoèo mã hóa thôi!
 
@@ -61,7 +61,7 @@ exit
 
 Bạn dựng sơ đồ và gõ thử xem Router phát IP ngon lành chưa nhé!
 
-=============================================================Lý thuyết================================================================
+# Lý thuyết
 
 Dù chữ hơi mờ một tẹo do giao diện xám nhưng dòng chữ **`DHCP request successful.`** sáng trưng kia là đủ để xác nhận bạn đã làm thành công 100% rồi!
 
