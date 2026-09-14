@@ -1,7 +1,6 @@
-===========================================Đề bài lab 3==========================================================
+# Đề bài lab 3
 
-
-=)) Phát hiện thú vị đấy!
+Phát hiện thú vị đấy!
 
 Trong chế độ **Physical View**, Packet Tracer thiết kế giao diện đồ họa tường ngăn cho giống văn phòng thực tế thôi, chứ thuật toán bên dưới vẫn coi đường dây đó là cáp mạng nối từ PC qua lỗ hổng/ông gen âm tường vào tủ Rack (**Main Wiring Closet** - nơi chứa Switch).
 
@@ -98,7 +97,7 @@ Mở **Command Prompt** trên **PC0** và gõ:
 
 *Lưu ý: Lần ping đầu tiên có thể bị mất 1 gói (`Request timed out`) do Router phải tìm ARP, 3 gói sau hiện `Reply...` là hoàn hảo!*
 
-===========================================Lý thuyết=============================================================
+# Lý thuyết
 
 Hỏi dồn một lần 7 câu chất lượng thế này chứng tỏ bạn đang học theo đúng kiểu **hiểu sâu bản chất** chứ không gật đầu cho qua! Giải đáp chi tiết từng câu cho bạn đây:
 
