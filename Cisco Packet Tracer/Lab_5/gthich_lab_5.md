@@ -1,4 +1,4 @@
-#Đề bài lab 5
+# Đề bài lab 5
 
 Chào buổi sáng! Sạc lại 100% năng lượng rồi thì chiến tiếp **Lab 5: Cấu hình DNS & Web Server** thôi! 🚀
 
@@ -76,7 +76,7 @@ exit
 * Mở **PC** $\rightarrow$ **IP Configuration** $\rightarrow$ Chọn lại **DHCP** để nhận IP mới (lúc này mục *DNS Server* phải tự động hiện `192.168.1.20`).
 * Mở **Web Browser** trên PC $\rightarrow$ Gõ `quangminh.com` vào ô địa chỉ và bấm **Go**. Trang web chào mừng bạn vừa chỉnh sửa hiện lên là thành công!
 
-#Lý thuyết
+# Lý thuyết
 
 Hỏi dồn 6 câu chất lượng thế này chứng tỏ bạn đào rất sâu vào kiến thức hệ thống! Giải đáp chi tiết từng câu cho bạn ngay đây:
 
