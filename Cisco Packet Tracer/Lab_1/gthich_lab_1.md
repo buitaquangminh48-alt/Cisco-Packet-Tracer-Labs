@@ -144,7 +144,7 @@ Khi làm Lab không nối Internet, bạn có thể tự do sáng tạo chọn c
 
 
 
-Đúng rồi đấy =))
+Đúng rồi đấy!
 
 Nếu bạn cố tình nhập số nhỏ hơn 0 (số âm) hoặc lớn hơn 255, phần mềm Packet Tracer hay máy tính thật sẽ chặn ngay lập tức và báo lỗi.
 
