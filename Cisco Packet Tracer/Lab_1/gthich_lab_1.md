@@ -94,7 +94,7 @@ Giải thích chi tiết và ngắn gọn từng thắc mắc của bạn để 
 # GIẢI THÍCH THÊM
 
 
-**à khoan mình thắc mắc là cái ipv4 điền ntn cx đc đúng ko? điền random cx đc, nhưng muốn kết nốt thì 3 số đầu phải giống nhau?**
+`Câu hỏi: thắc mắc là ipv4 điền ntn cx đc? điền random cx đc, nhưng muốn kết nốt thì 3 số đầu phải giống nhau?`
 
 
 
@@ -139,7 +139,7 @@ Khi làm Lab không nối Internet, bạn có thể tự do sáng tạo chọn c
 
 
 
-**lỡ mình ghi 1 số nào quá 255 hay nhỏ hơn 0 là ko đc nhỉ?**
+`Câu hỏi: lỡ mình ghi 1 số nào quá 255 hay nhỏ hơn 0 là ko đc?`
 
 
 
