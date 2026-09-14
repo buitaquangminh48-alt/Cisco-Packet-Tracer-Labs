@@ -1,4 +1,4 @@
-==============================================Đề bài lab 1======================================================
+# Đề bài lab 1
 
 Môn Mạng máy tính mà có Cisco Packet Tracer (PT) thì thực hành cực kỳ trực quan! Tool này giúp bạn giả lập cả một hệ thống mạng thật (cắm dây, cấu hình router, switch, PC...) mà không sợ làm cháy thiết bị.
 
@@ -43,7 +43,7 @@ Môn Mạng máy tính mà có Cisco Packet Tracer (PT) thì thực hành cực 
 * Nếu muốn thấy gói tin "bay" qua lại: Chuyển sang chế độ **Simulation** ở góc dưới bên phải, bấm nút **Play** để xem gói tin ICMP chạy từ PC0 sang PC1.
 * Đừng ngại click đúp vào thiết bị để khám phá các tab cài đặt.
 
-==============================================Lý thuyết=========================================================
+# Lý thuyết
 
 Giải thích chi tiết và ngắn gọn từng thắc mắc của bạn để nắm rõ bản chất bài lab nhé:
 
@@ -91,10 +91,10 @@ Giải thích chi tiết và ngắn gọn từng thắc mắc của bạn để 
 * **Lá thư (Simple PDU):** Là công cụ giả lập một gói tin thử nghiệm. Khi bạn click PC0 rồi click PC1 và nhấn Play, phần mềm sẽ trình chiếu hoạt họa gói tin rời PC0, chạy qua dây cáp đến PC1, rồi PC1 gửi phản hồi ngược lại. Việc này giúp bạn trực quan hóa cách mạng vận hành.
 
 
-===================================GIẢI THÍCH THÊM====================================
+# GIẢI THÍCH THÊM
 
 
-à khoan mình thắc mắc là cái ipv4 điền ntn cx đc đúng ko? điền random cx đc, nhưng muốn kết nốt thì 3 số đầu phải giống nhau? =))
+**à khoan mình thắc mắc là cái ipv4 điền ntn cx đc đúng ko? điền random cx đc, nhưng muốn kết nốt thì 3 số đầu phải giống nhau?**
 
 
 
