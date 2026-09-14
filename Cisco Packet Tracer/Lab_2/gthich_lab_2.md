@@ -1,4 +1,4 @@
-===================================================Đề bài lab 2===========================================================================================
+# Đề bài lab 2
 
 Tự luyện mà chủ động vắt óc ra hỏi bản chất như lúc nãy là siêu chuẩn luôn!
 
@@ -10,8 +10,6 @@ Vậy bài Lab 2 này mình gợi ý một đề bài cực kỳ thực tế đ�
 * **Sơ đồ thiết bị:**
 * **1 Switch** (chọn loại `2960`).
 * **4 PC** (đặt tên lần lượt là PC0, PC1, PC2, PC3).
-
-
 
 **Nhiệm vụ dành cho bạn:**
 
@@ -38,7 +36,7 @@ Vào PC0 ping sang PC3 (`192.168.1.40`) xem có `Reply` không.
 
 Bạn xếp sơ đồ xong rồi chụp ảnh màn hình hoặc có thắc mắc gì trong lúc làm cứ quăng vào đây nhé!
 
-===================================================Lý thuyết==============================================================================================
+# Lý thuyết
 
 Giải thích tường tận từng thắc mắc của bạn đây!
 
@@ -74,8 +72,6 @@ Giải thích tường tận từng thắc mắc của bạn đây!
 * **FastEthernet:** Tốc độ $100\text{ Mbps}$ (Chuẩn khá phổ biến trong các bài lab).
 * **GigabitEthernet:** Tốc độ $1\text{ Gbps} = 1000\text{ Mbps}$ (Chuẩn dùng phổ biến hiện nay).
 
-
-
 ---
 
 **4. Vì sao trên PC lại chỉ có `FastEthernet0`?**
@@ -84,11 +80,7 @@ Giải thích tường tận từng thắc mắc của bạn đây!
 * Thông thường, một máy tính cá nhân (PC/Laptop) chỉ được trang bị **1 card mạng LAN duy nhất** để cắm dây, nên nó chỉ hiện `FastEthernet0`.
 * Nếu sau này bạn gắn thêm 1 card mạng rời nữa vào PC, máy sẽ xuất hiện thêm cổng thứ hai tên là `FastEthernet1`.
 
-
-
-
-
-=====================================Lỗi physical=====================================
+# Lỗi physical
 
 Lý do cực kỳ đơn giản: Bạn đang bị dính ở chế độ **Simulation (Mô phỏng)** đấy =))
 
@@ -107,7 +99,7 @@ Bạn nhìn xuống góc dưới bên phải màn hình (chỗ thanh công cụ 
 2. Mở lại terminal và gõ `ping 192.168.1.40`, bạn sẽ thấy kết quả `Reply` hiện ra tức thì như bên tab Logical!
 
 
-======================================Phát hiện mới===================================
+# Phát hiện mới
 
 
 Trong chế độ Physical View, Packet Tracer thiết kế giao diện đồ họa tường ngăn cho giống văn phòng thực tế thôi, chứ thuật toán bên dưới vẫn coi đường dây đó là cáp mạng nối từ PC qua lỗ hổng/ông gen âm tường vào tủ Rack (Main Wiring Closet - nơi chứa Switch).
