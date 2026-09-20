@@ -1,7 +1,5 @@
 # **Chương 2: Basic Switch and End Device Configuration**
 
----
-
 ## **1. Phương Thức Truy Cập Cisco IOS (Cisco IOS Access)**
 
 * **Thành phần Hệ điều hành:**
