@@ -1,8 +1,8 @@
-Dưới đây là tóm tắt chi tiết, ngắn gọn và dễ theo dõi cho **Chương 3: Protocols and Models (Giao thức và Mô hình)** từ tài liệu Slide ITN Module 3.
+# **Chương 3: Protocols and Models (Giao thức và Mô hình)**
 
 ---
 
-### **1. Quy tắc giao tiếp (The Rules)**
+## **1. Quy tắc giao tiếp (The Rules)**
 
 Để các thiết bị trao đổi dữ liệu thành công, chúng phải đồng ý về các quy tắc giao tiếp (Giao thức - Protocols).
 
@@ -39,7 +39,7 @@ Dưới đây là tóm tắt chi tiết, ngắn gọn và dễ theo dõi cho **C
 
 ---
 
-### **2. Giao thức & Bộ giao thức (Protocols & Protocol Suites)**
+## **2. Giao thức & Bộ giao thức (Protocols & Protocol Suites)**
 
 * **Phân loại giao thức mạng:**
 * *Network Communications:* Cho phép truyền thông giữa các thiết bị.
@@ -83,7 +83,7 @@ Dưới đây là tóm tắt chi tiết, ngắn gọn và dễ theo dõi cho **C
 
 ---
 
-### **3. Tổ chức tiêu chuẩn (Standards Organizations)**
+## **3. Tổ chức tiêu chuẩn (Standards Organizations)**
 
 Các tổ chức phi lợi nhuận, trung lập giúp đảm bảo tính tương thích và phát triển các chuẩn mở (*Open Standards*):
 
@@ -105,7 +105,7 @@ Các tổ chức phi lợi nhuận, trung lập giúp đảm bảo tính tương
 
 ---
 
-### **4. Các Mô hình Tham chiếu (Reference Models)**
+## **4. Các Mô hình Tham chiếu (Reference Models)**
 
 Giúp chia nhỏ chức năng mạng để dễ thiết kế, giảng dạy và khắc phục sự cố.
 
@@ -132,7 +132,7 @@ Giúp chia nhỏ chức năng mạng để dễ thiết kế, giảng dạy và 
 
 ---
 
-### **5. Đóng gói Dữ liệu (Data Encapsulation)**
+## **5. Đóng gói Dữ liệu (Data Encapsulation)**
 
 * **Phân đoạn & Đa truy nhập (Segmentation & Multiplexing):** Chia nhỏ dữ liệu giúp tăng tốc độ truyền và tăng hiệu suất (chỉ cần gửi lại đoạn bị lỗi thay vì toàn bộ dữ liệu).
 
@@ -163,7 +163,7 @@ Giúp chia nhỏ chức năng mạng để dễ thiết kế, giảng dạy và 
 
 ---
 
-### **6. Truy cập Dữ liệu (Data Access)**
+## **6. Truy cập Dữ liệu (Data Access)**
 
 Địa chỉ hóa được xử lý ở cả Tầng 2 (Data Link) và Tầng 3 (Network):
 
@@ -197,13 +197,3 @@ Giúp chia nhỏ chức năng mạng để dễ thiết kế, giảng dạy và 
 
 
 * Frame L2 chứa **Destination MAC của Default Gateway (Router)** để thoát ra khỏi mạng cục bộ.
-
-
-
-
-
-
-
----
-
-Bạn có cần làm rõ chi tiết phần nào hoặc muốn chuyển sang chương tiếp theo không?
