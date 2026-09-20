@@ -1,7 +1,5 @@
 # **Chương 3: Protocols and Models (Giao thức và Mô hình)**
 
----
-
 ## **1. Quy tắc giao tiếp (The Rules)**
 
 Để các thiết bị trao đổi dữ liệu thành công, chúng phải đồng ý về các quy tắc giao tiếp (Giao thức - Protocols).
