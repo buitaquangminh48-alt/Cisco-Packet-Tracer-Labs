@@ -1,7 +1,5 @@
 # Chương 4: Tầng Vật Lý (Physical Layer) 
 
----
-
 ## 1 Mục đích của Tầng Vật Lý (Purpose of the Physical Layer)
  * Kết nối vật lý: Để truyền thông mạng, thiết bị phải tạo kết nối vật lý (có dây hoặc không dây) thông qua Card mạng (NIC).
  * Chức năng: Chuyển đổi các bit từ khung dữ liệu (frame) của tầng Data Link thành các tín hiệu truyền qua phương tiện truyền dẫn cục bộ. Đây là bước cuối cùng trong quá trình đóng gói dữ liệu (encapsulation).
