@@ -1,8 +1,8 @@
-**Tóm Tắt PowerPoint Chương 2: Basic Switch and End Device Configuration**
+# **Chương 2: Basic Switch and End Device Configuration**
 
 ---
 
-### **1. Phương Thức Truy Cập Cisco IOS (Cisco IOS Access)**
+## **1. Phương Thức Truy Cập Cisco IOS (Cisco IOS Access)**
 
 * **Thành phần Hệ điều hành:**
 * **Shell:** Giao diện người dùng (CLI hoặc GUI).
@@ -31,7 +31,7 @@
 
 ---
 
-### **2. Điều Hướng Cisco IOS (IOS Navigation)**
+## **2. Điều Hướng Cisco IOS (IOS Navigation)**
 
 * **Chế độ EXEC chính:**
 * **User EXEC Mode:** Chỉ cho phép giám sát cơ bản; ký hiệu prompt: `Switch>` hoặc `Router>`.
@@ -73,7 +73,7 @@
 
 ---
 
-### **3. Cấu Trúc Lệnh (The Command Structure)**
+## **3. Cấu Trúc Lệnh (The Command Structure)**
 
 * **Cú pháp lệnh cơ bản:** Bao gồm **Command** + **Space** + **Keyword / Argument**.
 
@@ -104,7 +104,7 @@
 
 ---
 
-### **4. Cấu Hình Thiết Bị Cơ Bản (Basic Device Configuration)**
+## **4. Cấu Hình Thiết Bị Cơ Bản (Basic Device Configuration)**
 
 * **Đặt tên thiết bị (Hostname):**
 * Lệnh: `hostname <tên_thiết_bị>` (trong Global Config).
@@ -139,7 +139,7 @@
 
 ---
 
-### **5. Lưu Cấu Hình (Save Configurations)**
+## **5. Lưu Cấu Hình (Save Configurations)**
 
 * **Hai tệp cấu hình hệ thống:**
 * **`running-config`:** Lưu trong RAM (mất khi tắt nguồn), phản ánh cấu hình hiện tại.
@@ -165,7 +165,7 @@
 
 ---
 
-### **6. Cổng và Địa Chỉ IP (Ports and Addresses)**
+## **6. Cổng và Địa Chỉ IP (Ports and Addresses)**
 
 * **Định dạng địa chỉ IP:**
 * **IPv4:** 32-bit, viết dưới dạng 4 số thập phân phân cách bằng dấu chấm (dotted decimal). Dùng **Subnet Mask** để phân biệt phần Network và Host.
@@ -188,7 +188,7 @@
 
 ---
 
-### **7. Kiểm Tra Kết Nối (Verify Connectivity)**
+## **7. Kiểm Tra Kết Nối (Verify Connectivity)**
 
 * Dùng lệnh `ping` để kiểm tra kết nối truyền nhận gói tin giữa hai thiết bị cuối.
 
@@ -196,7 +196,7 @@
 
 ---
 
-### **Đáp Án Phần Bài Tập Trắc Nghiệm Cuối Slide**
+## **Đáp Án Phần Bài Tập Trắc Nghiệm Cuối Slide**
 
 **2.1 Cisco IOS Access:**
 
