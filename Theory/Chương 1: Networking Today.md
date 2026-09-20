@@ -1,4 +1,4 @@
-# **ITN Module 1: Networking Today** thuộc chương trình Cisco CCNA v7.0 tổng quan các kiến thức nền tảng sau:
+# **Chương Module 1: Networking Today** 
 
 ## **1. Thành phần mạng (Network Components)**
 
@@ -10,7 +10,7 @@
 
 * **Media (Môi trường truyền dẫn):** Cáp đồng (xung điện), Cáp quang (xung ánh sáng), Sóng không dây (sóng điện từ).
 
-
+---
 
 ## **2. Sơ đồ & Mô hình mạng (Topologies & Models)**
 
@@ -22,7 +22,7 @@
 
 * **Mô hình Client-Server vs. Peer-to-Peer (P2P):** P2P dễ cài đặt, chi phí thấp nhưng bảo mật kém và không mở rộng được.
 
-
+---
 
 ## **3. Các loại hình mạng phổ biến**
 
@@ -34,7 +34,7 @@
 
 * **Intranet / Extranet / Internet:** Intranet (nội bộ công ty) $\rightarrow$ Extranet (mở rộng cho đối tác/khách hàng) $\rightarrow$ Internet (toàn cầu, ai cũng truy cập được).
 
-
+---
 
 ## **4. 4 Yêu cầu cơ bản của một mạng tin cậy (Reliable Network)**
 
@@ -49,7 +49,7 @@
 
 * **Security (Bảo mật):** Đảm bảo 3 yếu tố CIA — Confidentiality (Bảo mật), Integrity (Toàn vẹn), Availability (Khả dụng).
 
-
+---
 
 ## **5. Xu hướng công nghệ mới & Bảo mật**
 
