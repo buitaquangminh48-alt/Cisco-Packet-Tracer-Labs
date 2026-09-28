@@ -9,6 +9,7 @@
    * Địa chỉ IPv4 gồm 32 bits, chia làm 4 phần (mỗi phần 8 bits gọi là một octet hoặc byte) ngăn cách bằng dấu chấm. Để con người dễ đọc, chuỗi nhị phân này được chuyển sang dạng thập phân phân cách bằng dấu chấm (dotted decimal).
  * Ký hiệu vị trí (Positional Notation) & Trọng số:
    * Giá trị mỗi bit phụ thuộc vào vị trí của nó (từ phải sang trái, tương ứng 2^0 đến 2^7):
+     
 | Trọng số (2^n) | 2^7 | 2^6 | 2^5 | 2^4 | 2^3 | 2^2 | 2^1 | 2^0 |
 |---|---|---|---|---|---|---|---|---|
 | Giá trị thập phân | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
